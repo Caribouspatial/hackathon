@@ -2,7 +2,7 @@ from machine import Pin
 import time
 
 NB_TRANSITIONS = 5         # nombre de coups (le sens change à chaque coup)
-DUREE_IMPULSION_S = 0.1      # durée du 12 V pour chaque coup
+DUREE_IMPULSION_S = 0.5      # durée du 12 V pour chaque coup
 PAUSE_S = 0.1              # coupure entre deux coups
 
 dir_pin = Pin(14, Pin.OUT)   # DIR du PmodHB5
