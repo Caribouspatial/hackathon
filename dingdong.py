@@ -3,8 +3,8 @@ import time
 
 # --- Réglages ---
 NB_COUPS = 40              # nombre de coups par appui (40 coups = environ 2 secondes)
-DEMI_PERIODE_S = 0.04      # durée d'un coup dans un sens
-PAUSE_SECURITE_S = 0.005   # EN coupé autour de chaque changement de DIR
+DEMI_PERIODE_S = 1      # durée d'un coup dans un sens
+PAUSE_SECURITE_S = 0.5   # EN coupé autour de chaque changement de DIR
 # --- Broches (numéros GPIO) ---
 dir_pin = Pin(14, Pin.OUT)             # DIR du PmodHB5
 en_pin = Pin(15, Pin.OUT)              # EN du PmodHB5
@@ -28,6 +28,5 @@ while True:
     if bouton.value() == 0:            # bouton appuyé
         sonner()
         while bouton.value() == 0:     # attend le relâchement du bouton
-            time.sleep(0.01)
-        time.sleep(0.05)               # anti-rebond
-    time.sleep(0.01)
+            time.sleep(0.1)
+        time.sleep(0.5)               # anti-rebond
