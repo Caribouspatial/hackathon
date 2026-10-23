@@ -1,32 +1,33 @@
 from machine import Pin
 import time
 
-# --- Réglages ---
-NB_COUPS = 40              # nombre de coups par appui (40 coups = environ 2 secondes)
-DEMI_PERIODE_S = 1      # durée d'un coup dans un sens
-PAUSE_SECURITE_S = 0.5   # EN coupé autour de chaque changement de DIR
-# --- Broches (numéros GPIO) ---
-dir_pin = Pin(14, Pin.OUT)             # DIR du PmodHB5
-en_pin = Pin(15, Pin.OUT)              # EN du PmodHB5
-bouton = Pin(2, Pin.IN, Pin.PULL_UP)   # bouton vers GND : appuyé = 0
+DUREE_IMPULSION_S = 1    # on part de 1 s, comme au premier test qui avait sonné
+PAUSE_S = 0.5            # coupure entre les deux sens
+dir_pin = Pin(14, Pin.OUT)
+en_pin = Pin(15, Pin.OUT)
+bouton = Pin(2, Pin.IN, Pin.PULL_UP)
 dir_pin.value(0)
-en_pin.value(0)                        # au repos : sortie coupée
+en_pin.value(0)
 
-def sonner():
-    sens = 0
-    for i in range(NB_COUPS):
-        dir_pin.value(sens)            # EN est à 0 : changement de DIR sans danger
-        time.sleep(PAUSE_SECURITE_S)
-        en_pin.value(1)                # 12 V sur M+ / M-, polarité selon DIR
-        time.sleep(DEMI_PERIODE_S)     # le battant frappe
-        en_pin.value(0)                # coupure AVANT de changer DIR
-        time.sleep(PAUSE_SECURITE_S)
-        sens = 1 - sens                # on inverse la polarité pour le coup suivant
-    en_pin.value(0)                    # sécurité : on finit toujours coupé
+def impulsion(sens):
+    print("DIR =", sens)
+    dir_pin.value(sens)        # EN est à 0 : changement de DIR sans danger
+    time.sleep(0.01)
+    print("EN = 1  (12 V sur M+ / M-)")
+    en_pin.value(1)
+    time.sleep(DUREE_IMPULSION_S)
+    en_pin.value(0)
+    print("EN = 0")
+
+print("Prêt. Appuie sur le bouton.")
 
 while True:
-    if bouton.value() == 0:            # bouton appuyé
-        sonner()
-        while bouton.value() == 0:     # attend le relâchement du bouton
-            time.sleep(0.1)
-        time.sleep(0.5)               # anti-rebond
+    if bouton.value() == 0:
+        print("Bouton détecté")
+        impulsion(0)           # un gong
+        time.sleep(PAUSE_S)
+        impulsion(1)           # l'autre gong
+        while bouton.value() == 0:
+            time.sleep(0.01)
+        time.sleep(0.05)
+    time.sleep(0.01)               # anti-rebond
