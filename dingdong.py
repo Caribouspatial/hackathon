@@ -1,32 +1,33 @@
 from machine import Pin
 import time
 
-NB_COUPS = 4          # nombre de coups par appui (un coup = un sens)
-PAUSE_S = 0.5         # coupure entre deux coups
-DELAI_DIR_S = 0.01    # délai de sécurité entre le changement de DIR et le retour de EN
-# Module HB5 : DIR = direction, EN = enable
-dir_pin = Pin(14, Pin.OUT)
+# --- Réglages ---
+NB_COUPS = 40              # nombre de coups par appui (40 coups = environ 2 secondes)
+DEMI_PERIODE_S = 0.04      # durée d'un coup dans un sens
+PAUSE_SECURITE_S = 0.005   # EN coupé autour de chaque changement de DIR
+# --- Broches (numéros GPIO) ---
+dir_pin = Pin(14, Pin.OUT)             # DIR du PmodHB5
+en_pin = Pin(15, Pin.OUT)              # EN du PmodHB5
+bouton = Pin(2, Pin.IN, Pin.PULL_UP)   # bouton vers GND : appuyé = 0
 dir_pin.value(0)
-en_pin = Pin(15, Pin.OUT)
-en_pin.value(0)       # au repos : sortie coupée
-# Bouton de test : GP2 vers GND (pull-up interne)
-bouton = Pin(2, Pin.IN, Pin.PULL_UP)
+en_pin.value(0)                        # au repos : sortie coupée
+
 def sonner():
     sens = 0
     for i in range(NB_COUPS):
-        # EN est à 0 ici : on peut changer DIR sans danger
-        dir_pin.value(sens)
-        time.sleep(DELAI_DIR_S)
-        en_pin.value(1)              # le 12 V part, polarité selon DIR
-        time.sleep(1)         # la cloche charge
-        en_pin.value(0)              # coupure AVANT de changer DIR
-        sens = 1 - sens              # on inverse le sens pour le coup suivant
-        if i < NB_COUPS - 1:
-            time.sleep(PAUSE_S)
+        dir_pin.value(sens)            # EN est à 0 : changement de DIR sans danger
+        time.sleep(PAUSE_SECURITE_S)
+        en_pin.value(1)                # 12 V sur M+ / M-, polarité selon DIR
+        time.sleep(DEMI_PERIODE_S)     # le battant frappe
+        en_pin.value(0)                # coupure AVANT de changer DIR
+        time.sleep(PAUSE_SECURITE_S)
+        sens = 1 - sens                # on inverse la polarité pour le coup suivant
+    en_pin.value(0)                    # sécurité : on finit toujours coupé
+
 while True:
-    if bouton.value() == 0:          # bouton appuyé
+    if bouton.value() == 0:            # bouton appuyé
         sonner()
-        while bouton.value() == 0:   # attend le relâchement du bouton
+        while bouton.value() == 0:     # attend le relâchement du bouton
             time.sleep(0.01)
-        time.sleep(0.05)             # anti-rebond
+        time.sleep(0.05)               # anti-rebond
     time.sleep(0.01)
