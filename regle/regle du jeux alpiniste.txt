@@ -1,57 +1,67 @@
 RÈGLES DU JEU : L'ALPINISTE
 BUT DU JEU
-Les joueurs se regroupent en 3 équipes. Chaque équipe choisit le personnage qui lui correspond sur le dispositif :
 
-Le personnage de Gauche
+Maximum 3 joueurs :
 
-Le personnage du Centre
+L'objectif de chaque joueur est d'être le premier à faire monter son personnage tout en haut de la montagne.
+Pour y parvenir, les joueurs devront affronter des épreuves de dextérité, d'adresse et d'intelligence.
+Les joueurs ne peuvent pas descendre en dessous du cran zero
 
-Le personnage de Droite
-
-L'objectif de chaque équipe est d'être la première à faire monter son personnage tout en haut du parcours en franchissant les nombreux traits qui balisent le terrain. Pour y parvenir, les équipes devront affronter des épreuves de dextérité, d'adresse et d'intelligence.
+Les crans sont à mettre en nombre et distances à l'appréciations des joueurs. (utiliser une craie ou des post-it pour délimiter les crans).
 
 MATÉRIEL DE JEU
-Le Dispositif Principal : À installer sur une table couchée (comportant le terrain d'ascension avec les traits, les 3 personnages mobiles et le minuteur/cloche intégré).
+Le Dispositif Principal : Installer une table sur le flanc et fixer avec les vis les poulies sur le rebord de la table.
 
 Les Cartes Épreuves : La pioche des défis à relever au cours de la partie.
 
-16 Cartons de Jeu (tous de même taille).
+16 Cartons de Jeu (ratio 2:3), huit paires de montages différentes avec leur nom, altitude et coordonnées géo.
 
-Les Cartons Spéciaux "Paires" : Pour le jeu de mémoire et d'association.
-
-DÉROULEMENT D'UNE ÉPREUVE (LE MINUTEUR ET LA CLOCHE)
+DÉROULEMENT D'UNE ÉPREUVE
 Chaque épreuve se joue en temps limité grâce au minuteur directement intégré sur le dispositif.
 
-Lancement de l'épreuve : Au début de chaque défi, un joueur déclenche manuellement le minuteur du dispositif. Cela lance le décompte et fait sonner la cloche.
+Lancement de l'épreuve : Au début de chaque défi, un joueur déclenche manuellement le minuteur du dispositif,
+selon la longueur d'épreuve voulue.
 
-Réalisation du défi : L'équipe réalise l'épreuve sous la pression du temps.
+Fin de l'épreuve :
+Dès que le temps est écoulé, la cloche s'arrête de sonner. Toutes les actions des joueurs doivent immédiatement cesser.
 
-Fin de l'épreuve : Dès que le temps est écoulé, la cloche s'arrête de sonner. Toutes les actions des joueurs doivent immédiatement cesser.
+LES ÉPREUVES
 
-LES ÉPREUVES ET L'ATTRIBUTION DES POINTS
-À chaque tour, l'équipe pioche une Carte Épreuve. Selon les résultats de l'équipe, des points (fixes ou variables) sont attribués. Chaque point gagné permet de faire monter son personnage d'autant de traits le long du terrain d'ascension.
+À chaque tour, les joueurs (en commençant par le plus jeune) pioche une Carte Épreuve.
+Lors des épreuves, des points sont attribués en fonction des résultats de chaque joueur.
+Chaque point gagné permet de faire monter le personnage des joueurs d'autant de cran qu'il a gagné de points.
 
 1. Test d'Adresse (Le Lancé de Cartons)
-L'Épreuve : Un joueur sert de cible en tenant la boîte de jeu à 3 pas, tandis que ses coéquipiers sont les tireurs. Dans le temps imparti par le minuteur, les tireurs doivent lancer les cartons par-dessus la table pour les faire atterrir dans la boîte.
+Un joueur sert de cible en tenant la boîte de jeu à quatre pas d'une ligne imaginaire,
+les autres joueurs sont les tireurs.
+Dans le temps imparti par le minuteur, les tireurs (qui disposent de 4 cartons) doivent lancer un carton chacun leur tour pour les faire atterrir dans la boîte.
 
-Points et Progression : Le nombre de points gagnés (et donc le nombre de traits grimpés sur le terrain) dépend directement du nombre de cartons rentrés dans la boîte avant l'arrêt de la cloche.
+Comptage des points :
+Le nombre de points gagnés dépend directement du nombre de cartons rentrés dans la boîte avant l'arrêt de la cloche.
 
-2. Test d'Intelligence (Le Mémory des Paires)
-L'Épreuve : On installe les cartons spéciaux "Paires" face cachée sur la table. Les joueurs ont le temps du minuteur pour retourner les cartons deux par deux à tour de rôle afin de retrouver les paires identiques.
+2. Test d'Intelligence (Mémory)
+LOn installe les cartons face cachée sur la table en matrice 4X4.
+Les joueurs ont le temps du minuteur pour retourner les cartons deux par deux à tour de rôle afin de retrouver les paires identiques.
 
-Points et Progression : Chaque paire retrouvée avant la fin du temps donne un nombre de points précis, permettant de faire monter le personnage de l'équipe du nombre de traits correspondant.
+Comptage des points :
+Chaque paire retrouvée avant la fin du temps donne un point à tous les joueurs.
 
 3. Test de Dextérité (La Pyramide / Le Château de Cartons)
-L'Épreuve : Les joueurs doivent utiliser les 16 cartons de jeu pour construire un château/pyramide stable à l'intérieur de la boîte ou sur la table avant que la cloche ne s'arrête. Si la structure s'écroule, les joueurs peuvent la reconstruire s'il reste du temps sur le minuteur.
+Les joueurs doivent utiliser les 16 cartons de jeu pour construire un château/pyramide stable à l'intérieur de la boîte ou sur la table avant que la cloche ne s'arrête. Si la structure s'écroule, les joueurs peuvent la reconstruire s'il reste du temps sur le minuteur.
 
-Points et Progression : Si le château tient debout à la fin du chrono, l'équipe gagne un nombre fixe de points pour faire grimper son personnage d'un grand bond.
+Comptage des points :
+Si le château tient debout à la fin du chrono, les trois joueurs gagnent cinq points. S'ils ne réussissent pas, Vous descendez tous de 5 crans.
 
-4. Tests Physiques et d'Équilibre (Rapidité & Dextérité)
-L'Épreuve d'Équilibre : Placer un carton sur la tête, se lever, faire le tour de la table et se rasseoir sans le faire tomber.
+4. Test Physique
+Placer un carton sur la tête, se lever, faire trois tours de la table et se rasseoir sans le faire tomber.
 
-L'Épreuve de Rapidité : Poser un carton en bord de table, lui donner un coup par en dessous et le rattraper avec la même main en vol.
+Comptage des points :
+Réussir les trois tours rapporte 1 point. Faire tomber son carton fait descendre le joueur de 2 crans.
 
-Points et Progression : Ces épreuves offrent un nombre de points fixe en cas de réussite avant l'arrêt du minuteur, permettant d'avancer le personnage d'un nombre déterminé de traits.
+5. Test d'Équilibre
+Poser un carton en bord de table, lui donner un coup par en dessous et le rattraper avec la même main en vol.
 
 VICTOIRE
-L'équipe qui réussit à faire monter son personnage (gauche, centre ou droite) jusqu'au dernier trait tout en haut du dispositif remporte la partie !
+Le ou les joueurs qui réussissent à faire monter son personnage jusqu'au dernier cran tout en haut du dispositif remporte la partie.
+
+Bonne ascension !
